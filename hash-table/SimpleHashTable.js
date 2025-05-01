@@ -26,6 +26,12 @@ class SimpleHashTable{
     }
 
 
+    remove(key) {
+		const index = this.#hash(key);
+		this.table[index] = undefined;
+	}
+
+
 
 }
 
